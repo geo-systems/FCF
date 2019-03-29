@@ -1,0 +1,57 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "curly": true,
+    "eofline": false,
+    "align": [true, "parameters"],
+    "class-name": true,
+    "indent": [true, "spaces"],
+    "no-consecutive-blank-lines": [true],
+    "no-trailing-whitespace": true,
+    "no-duplicate-variable": true,
+    "no-var-keyword": true,
+    "no-empty": true,
+    "no-unused-expression": true,
+    "no-use-before-declare": true,
+    "no-require-imports": true,
+
+    "max-line-length": { "options": [200] },
+    "forin": false,
+    "object-literal-key-quotes": false,
+    "variable-name": [true, "allow-leading-underscore", "ban-keywords"],
+    "max-classes-per-file": false,
+    "ordered-imports": false,
+    "no-console": false,
+    "no-var-requires": false,
+    "object-literal-sort-keys": false,
+    "no-unnecessary-initializer": false,
+    
+    "one-line": [true,
+      "check-else",
+      "check-whitespace",
+      "check-open-brace"],
+    "quotemark": [true,
+      "single",
+      "avoid-escape"],
+    "semicolon": [true, "always"],
+    "typedef-whitespace": [true, {
+      "call-signature": "nospace",
+      "index-signature": "nospace",
+      "parameter": "nospace",
+      "property-declaration": "nospace",
+      "variable-declaration": "nospace"
+    }],
+    "whitespace": [true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"]
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  }
+}
